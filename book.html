@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down" />
+</head>
+<body>
+    <section class="sub-header-1">
+      <nav>
+          <a href="./index.html" class="logo"><img src="./image/lo.webp"> LT<span>express</span></a>
+          <div class="menu-link" id="menuLink">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./service.html">Services
+                  <span class="material-symbols-outlined icons-symbol">
+                    arrow_drop_down
+                  </span>
+                </a>
+                  <div class="sub-menu">
+                    <ul>
+                      <li><a href="./air-freight.html">Air-freight</a></li>
+                      <li><a href="./land-freight.html">Land-Freight</a></li>
+                      <li><a href="./sea-freight.html">Sea-Freight</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="./promo.html">Promo</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Book Now</h1> 
+    </section>
+    <!---------book------------->
+    <div class="contact-container">
+      <form action=""> 
+        <div class="input-space">
+          <input type="text" placeholder="Name" required>
+          <label for="Enter Your Name"></label>
+        </div>  
+        <div class="input-space">
+          <input type="email" placeholder="Email" required>
+          <label for="Enter Your Email"></label>
+        </div>  
+        <div class="input-space">
+          <input type="tel" placeholder="Phone" required>
+          <label for="Enter Your Number"></label>
+        </div>
+        <div class="input-space">
+          <label>Country</label>
+          <select>
+            <option>USA</option>
+            <option>China</option>
+            <option>Thailand</option>
+            <option>Philippines</option>
+          </select>
+          <input type="text" placeholder="State/Region" required>
+        </div> 
+        <div class="input-space">
+          <label>Date for pick-up</label>
+          <input type="date" placeholder="" required>
+        </div>
+        <textarea name="Message" placeholder="Your Message" cols="40" rows="10" class="Message"></textarea>
+        <a href="#" type="submit" class="btn-2">Submit</a>
+      </form>
+    </div>
+
+
+      <!----------footer------->
+      <section class="footer">
+        <h3>Let's Connect</h3>
+        <p>We would love to hear your experience in our sevice by clicking any of our pages below. 
+        <div class="icons">
+          <a href=""><i class="fa fa-facebook"></i></a>
+          <a href=""><i class="fa fa-instagram"></i></a>
+          <a href=""><i class="fa fa-twitter"></i></a>
+        </div>
+        <p>serving you with <i class="fa fa-heart-o"></i> make us happy.</p>
+      </section>
+   
+
+
+    <!--------------java toggle menu---------->
+    <script>
+
+      var menuLink = document.getElementById("menuLink");
+      function showMenu() {
+        menuLink.style.right = "0";
+      }
+      function hideMenu() {
+        menuLink.style.right = "-300px";
+      }
+
+    </script>
+
+
+</body>
+</html>
