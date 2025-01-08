@@ -339,8 +339,8 @@ nav .fa{
 
 @media(max-width:700px){
     .gallary_item img{
-        height: 500px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
     }
 
 }
