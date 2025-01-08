@@ -267,9 +267,12 @@ nav .fa{
     filter: blur(2px);
 }
 @media(max-width:700px){
-    
+    .card{
+        width: 300px;
+        height: 250px;
+    }
     .card img{
-        width: 320px;
+        width: 300px;
         height: 250px;
     }
     .card .info{
@@ -398,9 +401,9 @@ tbody tr td a{
 .rev-row{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 100%;
-    gap: 20px;
+    gap: 10px;
 }
 .row{
     padding: 20px;
@@ -480,14 +483,14 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 100%;
     gap: 50px;
     padding-top: 50px;
 }
 
 .details p{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     max-width: 700px;
 }
 .details img{
@@ -497,15 +500,14 @@ nav{
 }
 @media(max-width:700px){
     .details p{
-        max-width: 350px;
+        max-width: 300px;
     }
     .about-col{
         flex-direction: column;
-        margin-left: 20px;
     }
     .details img{
-        width: 350px;
-        height: 250px;
+        width: 300px;
+        height: 180px;
         
     }
 
@@ -526,15 +528,15 @@ nav{
     padding-top: 50px;
     width: 100%;
     justify-content: center;
-    align-content:center ;
+    align-items:center ;
     gap: 30px;
     background-color: rgb(217, 242, 254);
     transition: .5s ease-in-out;
     cursor: pointer;
 }
 img{
-    width: 350px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     
 }
 .ser-img a{
@@ -561,7 +563,7 @@ img{
 .air{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
     position: relative;
@@ -605,7 +607,7 @@ img{
 .land{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
     position: relative;
@@ -631,7 +633,7 @@ img{
 .sea{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
     position: relative;
@@ -658,7 +660,7 @@ img{
 .promo{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 50px;
@@ -667,7 +669,7 @@ img{
 
 @media(max-width:700px){
     .promo{
-        margin-left: 20px;
+        margin-left: 10px;
         
     }
 }
@@ -696,13 +698,14 @@ img{
     background-color:#cfedfc;
     width: 100%;
     height: 100vh;
+    font-size: 25px;
     justify-content: center;
-    align-content: center;
+    
 }
 
 .blog-row{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     border-bottom: 2px solid grey;
     padding-top:10px ;
 }
@@ -711,23 +714,26 @@ img{
 }
 .blog-row p{
     max-width: 450px;
-    margin-top: 30px;
 }
 .blog-row img{
     width: 300px;
     height: 200px;
     border-left: 3px solid blue;
 }
-@media (max-width:770px) {
+@media (max-width:700px) {
     .blog-row p{
-        width: 180px;
-        margin-top: 0;
+        width: 160px;
     }
     .blog-row img{
-        width: 180px;
+        width: 160px;
         height:100%;
     }
+    .blog{
+        margin-bottom: 80px;
+        font-size:16px ;
+    }
 }
+
 
 
 
@@ -741,7 +747,7 @@ img{
     min-height: 100vh;
     background-color: rgb(216, 239, 251);
     justify-content: center;
-    align-content: center;
+    align-items: center;
     padding-top:100px;
     margin-bottom: 100px;
     gap: 50px;
@@ -757,13 +763,13 @@ img{
 }
 .call-detail span{
     color: blue;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
 .call-detail h3{
     margin-top: 100px;
     color: blue;
-    font-size: 25px;
+    font-size: 20px;
 }
 /*---------submit-form--------*/
 .sub-header-1{
@@ -786,28 +792,26 @@ img{
     display: flex;
     position: relative;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     background-image: linear-gradient(rgba(14, 45, 66, 0.7),rgba(44, 45, 46, 0.7)),url(./image/kkkk.jpg);
     background-size:cover;
     background-position:center;
     height: 100vh;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-bottom: 150px;
 }
 form{
-    position: absolute;
     padding: 20px;
     border-radius: 5px;
     border: 2px solid white;
-    width: 370px;
-    height: 700px;
+    width: 320px;
+    height: 650px;
     text-align: center;
     backdrop-filter:blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }
 .input-space{
-    position: relative;
     border-bottom: 2px solid white;
     margin-top: 10px;
     margin-bottom: 10px;
